@@ -1,21 +1,26 @@
 # Task Manager CLI
 
-A simple Python console application to manage tasks using a CRUD (Create, Read, Update, Delete) system.
+This is a simple, console-based task management system developed in Python. 
+It allows users to efficiently organize and manage their daily activities.
 
 ## Features
 
-- Add tasks: Store ID, title, description, and priority.
-- List tasks: View all current tasks.
-- Find tasks: Search for a specific task by ID.
-- Update tasks: Modify details or status of existing tasks.
-- Delete tasks: Remove tasks from the list.
+- Register new tasks
+- View all tasks
+- Search for tasks by ID or title
+- Update tasks
+- Delete tasks
+- Data persistence using JSON file
 
-## How to Run
+## Example of use
 
-1. Ensure you have Python 3 installed.
-2. Download the script file.
-3. Open a terminal and run:
-   python your_filename.py
+- Select option 1 to add a task
+- Enter the requested information
+- Use option 2 to view all tasks
+- Use option 3 to search for tasks
+- Use option 4 to update tasks
+- Use option 5 to delete tasks 
+
 
 ## Technologies Used
 
@@ -23,4 +28,5 @@ A simple Python console application to manage tasks using a CRUD (Create, Read, 
 - Data Structures: Lists and Dictionaries
 
 ## Notes
-Data is stored in RAM and will be lost once the program is closed.
+- The data is stored in a file called tasks.json
+- The system handles basic errors to prevent the program from closing unexpectedly
