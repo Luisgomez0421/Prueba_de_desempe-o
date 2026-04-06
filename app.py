@@ -1,12 +1,8 @@
 import json
 import os
-
-# ---------- GLOBAL VARIABLES ----------
 tasks = []
 FILE_NAME = "tasks.json"
 
-
-# ---------- DATA PERSISTENCE ----------
 def load_tasks():
     """Load tasks from JSON file"""
     global tasks
@@ -29,13 +25,10 @@ def save_tasks():
     except IOError as e:
         print(f"Error saving tasks: {e}")
 
-
-# ---------- CORE FUNCTIONS ----------
 def generate_id():
     """Generate unique ID based on the highest current ID"""
     if not tasks:
         return 1
-    # Buscamos el ID más alto de la lista para evitar duplicados al borrar
     max_id = max(task['id'] for task in tasks)
     return max_id + 1
 
@@ -138,8 +131,6 @@ def delete_task():
     except ValueError:
         print("Invalid input.")
 
-
-# ---------- MENU ----------
 def show_menu():
     print("""
 ====== TASK MANAGER ======
@@ -176,7 +167,5 @@ def main():
             if option != "6":
                 print("Invalid option.")
 
-
-# ---------- RUN PROGRAM ----------
 if __name__ == "__main__":
     main()
