@@ -1,29 +1,26 @@
-Sistema de Gestión de Tareas
-Descripción
-Este es un sistema sencillo de gestión de tareas basado en consola, desarrollado en Python. Permite a los usuarios organizar y administrar sus actividades diarias de forma eficiente.
+# Task Manager CLI
 
-Funcionalidades
-Registrar nuevas tareas
-Ver todas las tareas
-Buscar tareas por ID o título
-Actualizar tareas
-Eliminar tareas
-Persistencia de datos utilizando archivo JSON
-Requisitos
-Python 3.x
-Cómo ejecutar el programa
-Descargar los archivos del proyecto
-Abrir una terminal
-Ejecutar el programa con el siguiente comando:
-python main.py
+A simple Python console application to manage tasks using a CRUD (Create, Read, Update, Delete) system.
 
-Ejemplo de uso
-Seleccionar la opción 1 para agregar una tarea
-Ingresar los datos solicitados
-Usar la opción 2 para ver todas las tareas
-Usar la opción 3 para buscar tareas
-Usar la opción 4 para actualizar tareas
-Usar la opción 5 para eliminar tareas
-Notas
-Los datos se almacenan en un archivo llamado tasks.json
-El sistema maneja errores básicos para evitar que el programa se cierre inesperadamente
+## Features
+
+- Add tasks: Store ID, title, description, and priority.
+- List tasks: View all current tasks.
+- Find tasks: Search for a specific task by ID.
+- Update tasks: Modify details or status of existing tasks.
+- Delete tasks: Remove tasks from the list.
+
+## How to Run
+
+1. Ensure you have Python 3 installed.
+2. Download the script file.
+3. Open a terminal and run:
+   python your_filename.py
+
+## Technologies Used
+
+- Language: Python 3
+- Data Structures: Lists and Dictionaries
+
+## Notes
+Data is stored in RAM and will be lost once the program is closed.
