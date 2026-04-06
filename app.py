@@ -1,10 +1,5 @@
 tasks = []
 
-
-# -------------------------
-# FUNCIONES
-# -------------------------
-
 def add_task():
     print("\n--- Add Task ---")
 
@@ -92,10 +87,6 @@ def menu():
     print("5. Delete task")
     print("6. Exit")
 
-
-# -------------------------
-# PROGRAMA PRINCIPAL
-# -------------------------
 
 option = 0
 
