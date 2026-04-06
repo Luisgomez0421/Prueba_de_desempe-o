@@ -11,7 +11,6 @@ def load_tasks():
             with open(FILE_NAME, "r") as file:
                 tasks = json.load(file)
         except (json.JSONDecodeError, IOError):
-            # Si el archivo está corrupto o vacío, empezamos con lista vacía
             tasks = []
     else:
         tasks = []
